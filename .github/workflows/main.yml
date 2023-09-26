@@ -1,0 +1,24 @@
+name: CI
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout código
+        uses: actions/checkout@v2
+
+      - name: Configurar ambiente
+        run: |
+          npm install
+        working-directory: ./tu_directorio_de_proyecto
+
+      - name: Ejecutar pruebas
+        run: |
+          npm test
+        working-directory: ./tu_directorio_de_proyecto
