@@ -16,6 +16,3 @@ async function saveText() {
   }
 
 saveText();
-
-
-//8_yDxWp6mAdqy0IgFB-aZHAksrjvQttR
